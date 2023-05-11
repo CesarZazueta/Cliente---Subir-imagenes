@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso para subir imagenes</title>
+</head>
+<body>
+    <div>
+        <h1> Subir Imagenes</h1>
+        <form action="http://localhost:4000/upload" method="POST" enctype="multipart/form-data" class="Imagenes" name="Subida_Imagenes">
+            <input type="file" name="imagens"><br>
+            <label for="">NumeroAleatorio</label><input type="number" name="numeroaleatorio"> <br>
+            <label for="">Hasheado</label><input type="text" name="hash"><br>
+            <button type="submit">Subir imagen</button>
+        </form>
+    </div>
+    <div>
+        <h1> Obtener imagenes</h1>
+        <form action="http://localhost:4000/obtenerImagenes" method="get" enctype="multipart/form-data" class="Imagenes" name="obtenerImagenes">
+            <label for="">Numero de ID de su imagen </label><input type="number" name="idpeticion"> <br>
+            <button type="submit">Obtener Imagen</button>
+        </form>
+        </div>
+</body>
+</html>
